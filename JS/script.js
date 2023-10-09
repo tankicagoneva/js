@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // console.log("Hello World!");
 
@@ -83,3 +83,105 @@ let age = 28; */
 // let isString = true;
 
 // console.log(isString);
+
+// let counter = 100;
+// let counter = 200;
+// counter = 300;
+
+// console.log(counter);
+
+let a = 10;
+let b = 4;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+
+let c = "dog";
+console.log(a + c);
+
+let d = "10";
+
+let sum = a + d;
+console.log(sum); //1010
+console.log(typeof sum);
+
+Math.round(40.5);
+Math.floor(40.5);
+Math.ceil(40.999);
+Math.random();
+
+let modulo = a % b;
+console.log(modulo);
+
+console.log(2 ** 4); //16
+Math.pow(2, 4); // 16
+
+console.log(20 / "steps"); //NaN - Not a number
+
+let message = "The ship 'MARS' docked at the harbor";
+let message1 = 'The ship "MARS" docked at the harbor';
+let message2 = 'The ship "MARS" docked at the harbor';
+
+let song =
+  "This\
+\
+is \
+\
+a short\
+\
+message";
+
+console.log(song);
+
+let song1 = `This
+
+is 
+
+a short
+
+message`;
+
+console.log(song1);
+
+let name = "John";
+console.log(`Hello, ${name}`);
+console.log("Hello," + " " + name);
+
+let test = "100" + "10";
+console.log(test);
+
+let test1 = "100" - "10";
+console.log(test1);
+console.log(typeof test1);
+
+let steps;
+console.log(steps);
+
+const person = {
+  firstName: "John",
+  lastName: "Smith",
+  age: 30,
+};
+
+const person1 = {
+  user1: {
+    firstName: "John",
+    lastName: "Smith",
+    age: 30,
+  },
+
+  user2: {
+    firstName: "Jane",
+    lastName: "Smith",
+    age: 30,
+  },
+};
+
+console.log(person.user2.name);
+
+console.log((person.firstName = "John"));
+console.log(person.lastName);
+console.log(person.age);
+
+let contacts = {};
