@@ -327,5 +327,199 @@ let age = 28; */
 // let decision = window.confirm("Is is OK");
 // console.log(decision);
 
-// let name = window.prompt("What is your name");
+// let favNumber = window.prompt("What is your fav number");
+// console.log(typeof name);
+
+// let width = window.prompt("Add width");
+
+// let volume = parseInt(width) * parseInt(height) * parseInt(boxLength);
+
 // console.log(name);
+
+// let color = "red";
+
+// if (color == "red") {
+//   console.log("This is red color");
+// } else {
+//   console.log("Wrong color");
+// }
+
+// let unitPrice = 10;
+// let pieces = prompt("How many pieces do you order", 0);
+// console.log(unitPrice);
+
+// if (pieces > 0) {
+//   let total = unitPrice * pieces;
+//   console.log(total); // 100
+// }
+
+// console.log(total); // error
+
+// let grade = prompt("Grade", 0);
+
+// // 1
+// if (grade > 5.5) {
+//   console.log("Excellent");
+// }
+
+//2
+4.9 > 5.5; // false
+// if (grade > 5.5) {
+//   console.log("Excellent");
+// } else {
+//   console.log("Not excellent");
+// }
+
+// if(){
+
+// }
+// else if(){
+
+// }
+
+// else if(){
+
+// }
+// else if(){
+
+// }
+
+// else{
+//     console.log();
+// }
+
+// let price = 100;
+// let shoppingCost = price > 50 ? "This is true" : "This is false";
+
+// let number = prompt("Enter a number", 0);
+
+// if (number < 10) {
+//   console.log("<10");
+// } else if (number < 30) {
+//   console.log("<30");
+// } else if (number < 60) {
+//   console.log("<60");
+// } else if (number < 90) {
+//   console.log("<90");
+// } else if (number < 100) {
+//   console.log("<100");
+// } else if (number == 100) {
+//   console.log("100");
+// } else {
+//   console.log(">100");
+// }
+
+// let number = prompt("enter a number between 0 and 9", 0);
+// if (number == 0) {
+//   console.log("zero");
+// } else if (number == 1) {
+//   console.log("one");
+// } else if (number == 2) {
+//   console.log("two");
+// } else if (number == 3) {
+//   console.log("three");
+// } else if (number == 4) {
+//   console.log("four");
+// } else if (number == 5) {
+//   console.log("five");
+// } else if (number == 6) {
+//   console.log("six");
+// } else if (number == 7) {
+//   console.log("seven");
+// } else if (number == 8) {
+//   console.log("eight");
+// } else if (number == 9) {
+//   console.log("nine");
+// } else {
+//   console.log("Number too big");
+// }
+
+// if (m) {
+//   if (age > 16) {
+//     console.log();
+
+//     if(){
+
+//     }
+//   }
+
+//   else{
+//     console.log();
+//   }
+// } else if (f) {
+
+// } else {
+// }
+// document.write("Hello World!");
+
+// let gate = prompt("Add gate");
+
+// switch (gate) {
+//   case "a":
+//     console.log("Gate A");
+//     break;
+//   case "b":
+//     console.log("Gate B");
+//     break;
+//   case "c":
+//     console.log("Gate C");
+//     break;
+
+//   default:
+//     console.log("No gateGF added");
+// }
+
+// let day = prompt("Add a weekday!");
+// switch (day) {
+//   case "Monday":
+//     console.log("Day 1");
+//     break;
+//   case "Tuesday":
+//     console.log("Day 2");
+//     break;
+//   case "Wednesday":
+//     console.log("Day 3");
+//     break;
+//   case "Thursday":
+//     console.log("Day 4");
+//     break;
+//   case "Friday":
+//     console.log("Day 5");
+//     break;
+//   case "Saturday":
+//     console.log("Day 6");
+//     break;
+//   case "Sunday":
+//     console.log("Day 7");
+//     break;
+//   default:
+//     console.log("Wrong data entered;");
+// }
+
+let day = prompt("Enter a number between 1 and 7");
+switch (day) {
+  case "1":
+    console.log("Monday");
+    break;
+  case "2":
+    console.log("Tuesday");
+    break;
+  case "3":
+    console.log("Wednesday");
+    break;
+  case "4":
+    console.log("Thursday");
+    break;
+  case "5":
+    console.log("Friday");
+    break;
+  case "6":
+    console.log("Saturday");
+    break;
+  case "7":
+    console.log("Sunday");
+    break;
+  default:
+    console.log("nan");
+    break;
+}
