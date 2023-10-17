@@ -496,30 +496,321 @@ let age = 28; */
 //     console.log("Wrong data entered;");
 // }
 
-let day = prompt("Enter a number between 1 and 7");
-switch (day) {
-  case "1":
-    console.log("Monday");
-    break;
-  case "2":
-    console.log("Tuesday");
-    break;
-  case "3":
-    console.log("Wednesday");
-    break;
-  case "4":
-    console.log("Thursday");
-    break;
-  case "5":
-    console.log("Friday");
-    break;
-  case "6":
-    console.log("Saturday");
-    break;
-  case "7":
-    console.log("Sunday");
-    break;
-  default:
-    console.log("nan");
-    break;
-}
+// switch (day) {
+//   case "1":
+//     console.log("Monday");
+//     break;
+//   case "2":
+//     console.log("Tuesday");
+//     break;
+//   case "3":
+//     console.log("Wednesday");
+//     break;
+//   case "4":
+//     console.log("Thursday");
+//     break;
+//   case "5":
+//   case "6":
+//   case "7":
+//     console.log("Sunday");
+
+//   default:
+//     console.log("nan");
+//     break;
+// }
+
+// let firstNumber = parseInt(prompt("Enter first number"));
+// let secondNumber = parseInt(prompt("Enter second number"));
+// let operand = prompt("Enter operand (+, -, * or /)");
+// let result;
+
+// if (firstNumber && secondNumber) {
+//   switch (operand) {
+//     case "+":
+//       result = firstNumber + secondNumber;
+//       break;
+//     case "-":
+//       result = firstNumber - secondNumber;
+//       break;
+//     case "*":
+//       result = firstNumber * secondNumber;
+//       break;
+//     case "/":
+//       result = firstNumber / secondNumber;
+//       break;
+//     default:
+//       result = "Error: unknown operand";
+//   }
+// } else {
+//   result = "Error: at least one of the entered values is not a number";
+// }
+// alert(result);
+
+//1. + 2.
+// let grade = prompt('Grade', 0);
+
+// if(grade>5.50){
+//     console.log('Excellent');
+// }
+// else{
+//     console.log('Not excellent');
+// }
+
+// 3.
+
+// let number = prompt("Enter a number to check if its even or odd", 0);
+// if (number % 2 == 0) {
+//   console.log("The number is EVEN!");
+// } else {
+//   console.log("The number is ODD!");
+// }
+
+// 4.
+
+// let number = prompt( 'enter a number between 0 and 9', 0)
+
+// if(number==0){
+// console.log('zero');
+// }
+// else if (number==1){
+//     console.log('one');
+// }
+// else if (number==2){
+//     console.log('two');
+// }
+// else if (number==3){
+//     console.log('three');
+// }else if (number==4){
+//     console.log('four');
+// }
+// else if (number==5){
+//     console.log('five');
+// }
+// else if (number==6){
+//     console.log('six');
+// }
+// else if (number==7){
+//     console.log('seven');
+// }
+// else if (number==8){
+//     console.log('eight');
+// }
+// else if (number==9){
+//     console.log('nine');
+// }
+// else{
+//     console.log('Number too big');
+// }
+
+// 6.
+
+// let userGender = prompt("Enter you gender (f for female or m for male)");
+
+// let userAge = prompt("Please enter you age", 0);
+
+// if (userAge < 16) {
+//   if (userGender == "f") {
+//     console.log("Miss");
+//   } else if (userGender == "m") {
+//     console.log("Master");
+//   }
+// } else {
+//   if (userGender == "f") {
+//     console.log("Ms.");
+//   } else if (userGender == "m") {
+//     console.log("Mr.");
+//   }
+// }
+
+// let foodName = prompt(
+//   "Enter you favourite fruit or vegetable:banana, apple, kiwi, cherry, lemon,grapes,tomato, cucumber, pepper or carrot  ",
+// );
+
+// var fruits = ["banana", "apple", "kiwi", "cherry", "lemon", "grapes"];
+// var vegetables = ["tomato", "cucumber", "cucumber", "pepper", "carrot"];
+// if (fruits.includes(foodName)) {
+//   console.log("The food you entered is fruit.");
+// } else if (vegetables.includes(foodName)) {
+//   console.log("The food you entered is vegetable.");
+// } else {
+//   console.log("Unknown food");
+// }
+
+// if (foodName === "banana" || foodName === "apple" || foodName === "kiwi" || foodName === "cherry" || foodName === "lemon" || foodName === "grapes")
+
+//11.
+
+// var x = 2;
+// var y = 5;
+
+// if (y > 0) {
+//   if (x > 2 && y < 10) {
+//     if (x === 2) console.log("YES");
+//   } else {
+//     if (x > 10 && y === 5) console.log("NO");
+//   }
+// } else {
+//   console.log("MAYBE");
+// }
+// console.log(" THE END");
+
+// let number = prompt("Enter a number:", 0);
+
+// if (!((number >= 100 && number <= 200) || number == 0)) {
+//   console.log("invalid");
+// }
+
+// let name = "Alice";
+// function showName() {
+//   console.log(name);
+// }
+
+// showName();
+
+// let showName = function showName() {
+//   console.log(name);
+// };
+
+// let add = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(add(10, 30));
+
+// function greet() {
+//   var a = "hello";
+//   console.log(a);
+// }
+
+// // console.log(a);
+// greet();
+
+// function greet() {
+//   let a = "hello";
+
+//   if (a == "hello") {
+//     let b = "world";
+
+//     console.log(a + " " + b);
+//   }
+
+//   console.log(b);
+// }
+
+// greet();
+
+// function printHeader() {
+//   console.log("--HEADER--");
+// }
+// printHeader();
+
+// function printMessage() {
+//   console.log("--HEADER from printMessage--");
+//   printHeader();
+// }
+// printMessage();
+
+// function upperPart() {
+//   console.log("CASH RECEIPT");
+//   console.log("-----------");
+// }
+
+// function middlePart() {
+//   console.log("Payee_______");
+//   console.log("Payer_______");
+// }
+// function bottomPart() {
+//   console.log("-----------");
+//   console.log("(c) 2023");
+// }
+// function output() {
+//   upperPart();
+//   middlePart();
+//   bottomPart();
+// }
+// output();
+
+// function upperPart() {
+//   console.log("CASH RECEIPT" + "John Doe");
+// }
+// upperPart();
+// function middlePart() {
+//   console.log("Payee: John" + "Payer: John");
+// }
+// middlePart();
+// function bottomPart() {
+//   console.log("2000 USD");
+// }
+// function final() {
+//   upperPart();
+//   middlePart();
+//   bottomPart();
+// }
+// final();
+
+// function getFullName(firstName, lastName) {
+//   return firstName + " " + lastName;
+// }
+
+// console.log(getFullName("Test", "test"));
+
+// function getNames(firstName, lastName, familyName) {
+//   const name = firstName + " " + lastName;
+//   const fullName = name + " " + familyName;
+//   return [name, fullName];
+// }
+// console.log(getNames("John", "Doe", "Smith"));
+
+// function getNames(firstName, lastName, familyName) {
+//   const name = firstName + " " + lastName;
+//   const fullName = name + " " + familyName;
+//   return { name, fullName };
+// }
+// console.log(getNames("John", "Doe", "Smith"));
+
+// function personalTitle() {
+//   let userGender = prompt("Enter you gender (f for female or m for male)");
+//   let userAge = prompt("Please enter you age", 0);
+//   if (userAge < 16) {
+//     if (userGender == "f") {
+//       console.log("Miss");
+//     } else if (userGender == "m") {
+//       console.log("Master");
+//     }
+//   } else {
+//     if (userGender == "f") {
+//       console.log("Ms.");
+//     } else if (userGender == "m") {
+//       console.log("Mr.");
+//     }
+//   }
+// }
+// personalTitle();
+
+// function getTriangleArea(a, b) {
+//   return (a * b) / 2;
+// }
+
+// console.log(getTriangleArea(3, 4));
+
+// function exponent(a, b) {
+//   return a ** b;
+// }
+// console.log(exponent(3, 4));
+
+// function exponent(a, b) {
+//   return Math.pow(a, b);
+// }
+// console.log(exponent(3, 4));
+
+// function fahrenheitToCelsius(fahrenheit) {
+//   var celsius = ((fahrenheit - 32) * 5) / 9;
+//   return celsius;
+// }
+
+// var fahrenheitTemperature = 98.6;
+// var celsiusTemperature = fahrenheitToCelsius(fahrenheitTemperature);
+
+// console.log(
+//   fahrenheitTemperature + "°F is equal to " + celsiusTemperature.toFixed(2),
+// );
