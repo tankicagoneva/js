@@ -814,3 +814,187 @@ let age = 28; */
 // console.log(
 //   fahrenheitTemperature + "°F is equal to " + celsiusTemperature.toFixed(2),
 // );
+
+// function printStars() {
+//   console.log("*");
+//   console.log("**");
+//   console.log("***");
+//   console.log("****");
+//   console.log("*****");
+//   console.log("******");
+//   console.log("*******");
+//   console.log("********");
+//   console.log("*********");
+//   console.log("**********");
+// }
+// printStars();
+
+// const numLines = 10;
+// const total = 55;
+
+// function printStars() {
+//   const numLines = 10;
+//   const totalStars = 55;
+
+//   let currentLine = 1;
+//   let starsPrinted = 0;
+
+//   while (currentLine <= numLines) {
+//     const starsToPrint = Math.min(currentLine, totalStars - starsPrinted);
+//     const line = "*".repeat(starsToPrint);
+//     starsPrinted += starsToPrint;
+//     console.log(line);
+//     currentLine++;
+//   }
+// }
+// printStars();
+
+// let isOver = false;
+// let counter = 1;
+// while (isOver != true) {
+//   let continueLoop = confirm(`[${counter}] Continue the loop`);
+//   isOver = continueLoop === true ? false : true;
+//   counter = counter + 1;
+// }
+
+// function printStars() {
+//   const numLines = 10;
+//   const totalStars = 55;
+
+//   let currentLine = 1;
+//   let starsPrinted = 0;
+
+//   do {
+//     const starsToPrint = Math.min(currentLine, totalStars - starsPrinted);
+//     const line = "*".repeat(starsToPrint);
+//     starsPrinted += starsToPrint;
+//     console.log(line);
+//     currentLine++;
+//   } while (currentLine <= numLines);
+// }
+// printStars();
+
+// let isOver = false;
+// let counter = 1;
+
+// do {
+//   isOver = !confirm(`[${counter++}] Continue the loop`);
+// } while (!isOver);
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i); // 1-10
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i); // 0-9
+// }
+
+// let i = 0;
+
+// while (i < 10) {
+//   console.log(i);  // 0-9
+//   i++;
+// }
+
+// function test() {
+//   let arr = [10, 30, 50, 100];
+//   let sum = 0;
+
+//   for (let i = 0; i < 4; i++) {
+//     console.log(arr[i]);
+//     sum += arr[i];
+//     console.log(sum);
+//   }
+//   console.log(sum);
+// }
+// test();
+
+// function test() {
+//   let arr = [10, 30, 50, 100];
+//   let arr1 = [10, 30, 50, 100, 10];
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+//     sum += arr[i];
+//     console.log(sum);
+//   }
+//   console.log(sum);
+// }
+// test();
+
+// let arr = [10, 30, 50, 100];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// for (let i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+
+// let arr = [10, 30, 50, 100];
+// for (let i = arr.length - 1; i > 0; i--) {
+//   console.log(arr[i]);
+// }
+
+// for (let i = 0; i < arr.length; i += 2) {
+//   console.log(arr[i]);
+// }
+
+// let arr = [10, 30, 50, 100];
+
+// for (let num of arr) {
+//   if (num > 10) {
+//     console.log(num);
+//   }
+// }
+
+// let cities = [
+//   { name: "New York", population: 18.65e6 },
+//   { name: "Cairo", population: 18.82e6 },
+//   { name: "Mumbai", population: 19.32e6 },
+//   { name: "São Paulo", population: 20.88e6 },
+//   { name: "Mexico City", population: 21.34e6 },
+//   { name: "Shanghai", population: 23.48e6 },
+//   { name: "Delhi", population: 25.87e6 },
+//   { name: "Tokyo", population: 37.26e6 },
+// ];
+// // for (let city of cities) {
+// //   if (city.population > 20e6) {
+// //     console.log(`${city.name} (${city.population})`);
+// //   }
+// // }
+
+// for (let city of cities) {
+//   if (city.population > 20e6) {
+//     console.log(`${city.name} (${city.population})`);
+//   }
+// }
+
+// for (let cityName of cities) {
+//   if (cityName.name === "Tokyo") {
+//     console.log(`${cityName.name} (${cityName.population})`);
+//   } else if (cityName.name === "Cairo") {
+//     console.log(`${cityName.name} (${cityName.population})`);
+//   } else if (cityName.name === "New York") {
+//     console.log(`${cityName.name} (${cityName.population})`);
+//   }
+// }
+
+// for (let i = 10; i >= 0; i--) {
+//   for (let j = 0; j < i; j++) {
+//     console.log(i, "-", j);
+//   }
+// }
+
+// let user = {
+//   name: "Calvin",
+//   surname: "Hart",
+//   age: 66,
+//   email: "CalvinMHart@teleworm.us",
+// };
+
+// for (let key in user) {
+//   console.log(key);
+// }
