@@ -998,3 +998,215 @@ let age = 28; */
 // for (let key in user) {
 //   console.log(key);
 // }
+
+
+//1
+// let count = 0;
+// for (let i = 0; i <= 10; i++) {
+//   count++;
+// }
+// console.log("Loop 1 Count: " + count); // 11
+
+
+//2
+// let count2 = 0;
+// for (let i = 0; i < 10; i++) {
+//   count2++;
+// }
+// console.log("Loop 2 Count: " + count2); //10
+
+//3
+// let count3 = 0;
+// for (let i = 0; i !== 10; i++) {
+//   count3++;
+// }
+// console.log("Loop 3 Count: " + count3);
+
+// 4.
+// let count4 = 0;
+// for (let i = 10; i > 0; i--) {
+//   count4++;
+// }
+// console.log("Loop 4 Count: " + count4);
+
+// 5. 
+// let count5 = 0;
+// for (let i = 10; i >= 0; i--) {
+//   count5++;
+// }
+// console.log("Loop 5 Count: " + count5);
+
+// 6.
+// let count6 = 0;
+// for (let i = 0; i <= 10; i = i + 2) {
+//   count6++;
+// }
+// console.log("Loop 6 Count: " + count6);
+
+// 7.
+// let count7 = 0;
+// for (let i = 0; i < 10; i = i + 2) {
+//   count7++;
+// }
+// console.log("Loop 7 Count: " + count7);
+
+// 8. 
+// let count8 = 0;
+// for (let i = 0; i !== 10; i = i + 2) {
+//   count8++;
+// }
+// console.log("Loop 8 Count: " + count8);
+
+// 9. 
+// let count9 = 0;
+// for (let i = 0; i !== 10; i = i + 3) {
+//   count9++;
+// }
+// console.log("Loop 9 Count: " + count9);
+
+// 10. 
+// let count10 = 0;
+// for (let i = 0; i <= 10; i = i * 2) {
+//   count10++;
+// }
+// console.log("Loop 10 Count: " + count10);
+
+// 11
+// let count11 = 0;
+// for (let i = 1; i <= 10; i = i * 2) {
+//   count11++;
+// }
+// console.log("Loop 11 Count: " + count11);
+
+// 12. 
+// let count12 = 0;
+// for (let i = 1; i !== 10; i = i * 2) {
+//   count12++;
+// }
+// console.log("Loop 12 Count: " + count12);
+
+// 13.
+// let count13 = 0;
+// for (let i = 1; i < 10; i = i * 3) {
+//   count13++;
+// }
+// console.log("Loop 13 Count: " + count13);
+
+// 14. 
+// let count14 = 0;
+// for (let i = 10; i > 0; i = i / 3) {
+//   count14++;
+// }
+// console.log("Loop 14 Count: " + count14);
+
+// let count15 = 0;
+// for (let i = 10; i >= 0; i = i / 3) {
+//   count15++;
+// }
+// console.log("Loop 15 Count: " + count15);  //inf
+
+// function sequence() {
+//   let num = prompt("Enter a number");
+//   let n = 1;
+
+//   while (n <= num) {
+//     n = 2 * n + 1;
+//     console.log(n);
+//   }
+// }
+// sequence();
+// console.log();
+
+// function factorial(arg) {
+//   let num = parseInt(arg);
+//   let fact = 1;
+
+//   do {
+//     fact = fact * num;
+//     num--;
+//   } while (num > 1);
+//   console.log(fact);
+// }
+
+// factorial(5);
+
+// let str = "java script language";
+// console.log(str.length);
+
+// let character = str.charAt(6);
+// console.log(character);
+
+// let newStr = str.slice(0, 4);
+// console.log(newStr);
+
+// let arr = ["The Matrix", "John Wick", "The Lord of the Rings", "The Hobbit"];
+
+// let newArr = arr.slice(1, 3);
+// console.log(newArr);
+
+// console.log("test".length);
+
+// let newStr = str.split(" ");
+// console.log(newStr);
+
+// let names = ["Olivia", "Emma", "Mateo", "Samuel"];
+// let names2 = ["Jane", "John"];
+
+// console.log(names.indexOf("Emma"));
+// console.log(names.indexOf("Tankica"));
+// console.log(names.length);
+// console.log(names.push("Amelia"));
+// // console.log(names.length);
+
+// // let names1 = names.push("Amelia");
+// console.log(names);
+// console.log(names.unshift("Victor"));
+// console.log(names);
+
+// console.log(names.length);
+// let lastName = names.pop();
+// console.log(lastName);
+// console.log(names);
+
+// let firstElement = names.shift();
+// console.log(firstElement); //Olivia
+// console.log(names);
+
+// names.reverse();
+// console.log(names);
+
+// let n1 = names.slice(1, 3);
+// console.log(n1);
+
+// let allNames = names.concat(names2);
+// console.log(allNames);
+
+// let result = names.filter((name) => name.length > 4);
+// console.log(result);
+
+// names.forEach((name) => console.log(name));
+
+
+// console.log(Array.isArray(names));
+
+// let result = names.map((name) => name.length);
+// console.log(result);
+
+// 6.
+// let myArr = [];
+// let i = 0;
+
+// while (i <= 4) {
+//   myArr.push(i);
+//   i++;
+// }
+
+// console.log(myArr);
+
+//7.
+// let myArr = [];
+
+// for (i = 1; i <= 9; i += 2) {
+//   myArr.push(i);
+// }
+// console.log(myArr);
