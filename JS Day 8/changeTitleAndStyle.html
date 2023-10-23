@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="mainTitle">My home page</h1>
+
+    <button onclick="changeTitle()">Click me to change the title</button>
+
+    <button onclick="changeTitleStyle()">Click me to change title style</button>
+
+    <script>
+      function changeTitle() {
+        let title = document.getElementById("mainTitle");
+        title.innerHTML = "This is new title changed from Javascript";
+      }
+
+      function changeTitleStyle() {
+        let title = document.getElementById("mainTitle");
+        title.style.color = "black";
+        title.style.backgroundColor = "yellow";
+        title.style.border = "5px dashed red";
+      }
+    </script>
+  </body>
+</html>
