@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #pageSize,
+      #screenSize {
+        border: 1px solid red;
+        padding: 2px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Current page size: <span id="pageSize"></span></p>
+    <p>Screen size: <span id="screenSize"></span></p>
+
+    <script>
+      // take page size and screen size
+      window.onload = resize;
+      window.onresize = resize;
+
+      function resize(event) {
+        console.log("resize");
+
+        //page size  (window.innerWidth & window.innerHeight)
+        let pageSizeSpan = document.querySelector("#pageSize");
+
+        pageSizeSpan.innerHTML =
+          "Width:" + window.innerWidth + " Height:" + window.innerHeight;
+
+        //screen size
+
+        let screenSizeSpan = document.querySelector("#screenSize");
+        screenSizeSpan.innerHTML =
+          "Width:" + screen.width + " Height:" + screen.height;
+      }
+    </script>
+  </body>
+</html>

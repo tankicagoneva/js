@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+  </head>
+  <body>
+    <button id="myButton">Click me!</button>
+    <button id="button">Click meeeee!</button>
+    <p></p>
+
+    <script>
+      // addEventListener("click", function (event) {
+      //   document.body.innerHTML += "BUTTON CLICKED!";
+      // });
+
+      // addEventListener("click", processClick);
+
+      // function processClick(event) {
+      //   console.log("BUTTON CLICKED!");
+      // }
+
+      let button = document.getElementById("button");
+
+      button.addEventListener("click", processClick);
+
+      function processClick(event) {
+        alert(
+          "Button clicked, event listener removed, try to click again: nothing will happen anymore!",
+        );
+        button.removeEventListener("click", processClick);
+      }
+    </script>
+  </body>
+</html>

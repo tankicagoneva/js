@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="page">
+      <form id="messageForm">
+        <h2>My profile</h2>
+        <textarea id="message" spellcheck="false"></textarea>
+        <div id="charactersLeft">180 characters</div>
+        <div id="lastKey"></div>
+      </form>
+    </div>
+    <script>
+      // ASCII table: https://css-tricks.com/snippets/javascript/javascript-keycodes/
+      
+      let textElement = document.getElementById("message");
+
+      textElement.addEventListener("keyup", function (e) {
+        let textEntered = document.getElementById("message").value;
+        let charDisplay = document.getElementById("charactersLeft");
+        let counter = 180 - textEntered.length;
+        charDisplay.textContent = counter;
+        let lastKey = document.getElementById("lastKey");
+
+        lastKey.textContent = "Last key in ASCII code: " + e.keyCode;
+      });
+    </script>
+  </body>
+</html>

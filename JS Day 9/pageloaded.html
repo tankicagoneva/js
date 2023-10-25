@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #pageStatus {
+        border: 1px solid red;
+        padding: 2px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body onload="init()">
+    <p>PAGE STATUS: <span id="pageStatus">NOT LOADED YET</span></p>
+
+    <script>
+      // change page status to LOADED
+
+      // window.onload = init; //
+
+      // window.onload = function () {};
+
+      function init() {
+        let status = document.querySelector("#pageStatus");
+        status.innerHTML = "LOADED!";
+      }
+    </script>
+  </body>
+</html>

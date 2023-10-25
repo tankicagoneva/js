@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myCanvas {
+        border: 4px solid;
+        margin-left: 20px;
+        background-color: lightGrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Please move the mouse on this window!"</h1>
+    <div id="mousePositions"></div>
+
+    <div id="mouseScreenPositions"></div>
+    <br />
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+      window.onmousemove = processMouseMove;
+
+      function processMouseMove(event) {
+        let mousePositions = document.querySelector("#mousePositions");
+        mousePositions.innerHTML = `clientX: ${event.clientX} clientY: ${event.clientY}
+        <br> 
+        pageX: ${event.pageX} pageY: ${event.pageY}
+        `;
+
+        let mouseScreenPositions = document.querySelector(
+          "#mouseScreenPositions",
+        );
+
+        mouseScreenPositions.innerHTML = `screenX: ${event.screenX} screenY: ${event.screenY}`;
+      }
+
+      
+    </script>
+  </body>
+</html>
