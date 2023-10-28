@@ -190,3 +190,115 @@
       //   default:
       //     console.log("unknown");
       // }
+
+
+// day 5 
+      
+// 6.
+      // function add(a, b) {
+      //   if (!Number.isInteger(a) || !Number.isInteger(b)) {
+      //     return NaN;
+      //   }
+      //   return a + b;
+      // }
+      
+      // function sub(a, b) {
+      //   if (!Number.isInteger(a) || !Number.isInteger(b)) {
+      //     return NaN;
+      //   }
+      //   return a - b;
+      // }
+      
+      // function mult(a, b) {
+      //   if (!Number.isInteger(a) || !Number.isInteger(b)) {
+      //     return NaN;
+      //   }
+      //   return a * b;
+      // }
+
+// 7.
+      // let add = (a, b) =>
+      //   !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a + b;
+      // let sub = (a, b) =>
+      //   !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a - b;
+      // let mult = (a, b) =>
+      //   !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a * b;
+
+// BONUS 1.
+      // function fruitShop() {
+      //   const day = prompt("Enter a day").toLowerCase();
+      //   const fruit = prompt("Enter a fruit").toLowerCase();
+      //   const quantity = parseFloat(prompt("Enter quantity", 0));
+      //   let price = 1.0;
+      
+      //   if (
+      //     day === "monday" ||
+      //     day === "tuesday" ||
+      //     day === "wednesday" ||
+      //     day === "thursday" ||
+      //     day === "friday"
+      //   ) {
+      //     if (fruit === "banana") {
+      //       price = price * 4.4;
+      //     } else if (fruit === "apple") {
+      //       price = 2.2;
+      //     } else if (fruit === "orange") {
+      //       price = 1.85;
+      //     } else if (fruit === "grapefruit") {
+      //       price = 0.45;
+      //     } else if (fruit === "kiwi") {
+      //       price = price * 2.7;
+      //     } else if (fruit === "pineapple") {
+      //       price = 7.5;
+      //     } else if (fruit === "grapes") {
+      //       price = 3.85;
+      //     } else {
+      //       console.log(
+      //         "Please add a valid fruit (banana, apple, orange, grapefruit, kiwi, pineapple, grapes)",
+      //       );
+      //     }
+      //   } else if (day === "saturday" || day === "sunday") {
+      //     if (fruit === "banana") {
+      //       price = 5.7;
+      //     } else if (fruit === "apple") {
+      //       price = 4.25;
+      //     } else if (fruit === "orange") {
+      //       price = 1.9;
+      //     } else if (fruit === "grapefruit") {
+      //       price = 1.8;
+      //     } else if (fruit === "kiwi") {
+      //       price = 4.0;
+      //     } else if (fruit === "pineapple") {
+      //       price = 8.6;
+      //     } else if (fruit === "grapes") {
+      //       price = 4.2;
+      //     } else {
+      //       console.log(
+      //         "Please add a valid fruit (banana, apple, orange, grapefruit, kiwi, pineapple, grapes)",
+      //       );
+      //     }
+      //   } else {
+      //     console.log(
+      //       "Please enter a valid day (monday, tuesday, wednesday, thursday, friday, saturday, sunday)",
+      //     );
+      //   }
+      
+      //   if (price >= 0) {
+      //     console.log((price * quantity).toFixed(2));
+      //   } else {
+      //     console.log("Error: Price could not be determined.");
+      //   }
+      // }
+      
+      // fruit();
+
+// BONUS 2.
+
+      // function convertToDenar(euro) {
+      //   if (Number.isNaN(euro)) {
+      //     return NaN;
+      //   }
+      //   return euro * 61.5;
+      // }
+      
+      // console.log(convertToDenar(100));   
