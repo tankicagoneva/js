@@ -302,3 +302,72 @@
       // }
       
       // console.log(convertToDenar(100));   
+
+
+// day 6
+
+// 3.
+      
+      // for (i = 100; i >= 0; i -= 10) {
+      //   console.log(i);
+      // }
+
+// 4
+      
+      // let upperLimit = Number(prompt("Enter upper limit"));
+      // let lowerLimit = Number(prompt("Enter lower limit"));
+      
+      // if (
+      //   !Number.isNaN(upperLimit) &&
+      //   !Number.isNaN(lowerLimit) &&
+      //   upperLimit > lowerLimit
+      // ) {
+      //   for (i = upperLimit; i >= lowerLimit; i -= 10) {
+      //     console.log(i);
+      //   }
+      // }
+
+// 5.
+      
+      // let numbers = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
+      // for (number of numbers) {
+      //   console.log(number);
+      // }
+      
+      // for (number of numbers) {
+      //   if (number % 2 === 0) {
+      //     console.log(number);
+      //   }
+      // }
+      
+      // for (number of numbers) {
+      //   if (number > 10 && number < 60) {
+      //     console.log(number);
+      //   }
+      // }
+
+// BONUS
+      
+      // function drawHouse(n) {
+      //   let houseR = Math.floor((n + 1) / 2);
+      //   let house = Math.floor(n / 2);
+      
+      //   for (let i = 1; i <= houseR; i++) {
+      //     if (n % 2 === 0) {
+      //       const first =
+      //         "-".repeat(houseR - i) + "*".repeat(2 * i) + "-".repeat(houseR - i);
+      //       console.log(first);
+      //     } else {
+      //       const first =
+      //         "-".repeat(houseR - i) + "*".repeat(2 * i - 1) + "-".repeat(houseR - i);
+      //       console.log(first);
+      //     }
+      //   }
+      
+      //   for (let i = 0; i < house; i++) {
+      //     console.log("|" + "*".repeat(n - 2) + "|");
+      //   }
+      // }
+      
+      // drawHouse(4);
+
