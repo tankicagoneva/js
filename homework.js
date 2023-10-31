@@ -371,3 +371,174 @@
       
       // drawHouse(4);
 
+// day 7
+
+// 1.
+      // for (var i = 0; i <= 1000; i++) {
+      //   if (i % 10 == 7) {
+      //     console.log(i);
+      //   }
+      // }
+
+// 2.
+      
+      // function radians_to_degrees(radians) {
+      //   const pi = Math.PI;
+      //   return Math.round(radians * (180 / pi));
+      // }
+
+      // console.log(radians_to_degrees(3.1416)); //180
+      // console.log(radians_to_degrees(6.2832)); //360
+      // console.log(radians_to_degrees(0.7854)); //45
+      // console.log(radians_to_degrees(0.5236)); //30
+
+// 3.
+
+      // function biggerNumber(num1, num2) {
+      //   if (num1 > num2) {
+      //     console.log(num1);
+      //   } else {
+      //     console.log(num2);
+      //   }
+      // }
+      
+      // biggerNumber(5, 3); //5
+      // biggerNumber(3, 5); //5
+      // biggerNumber(10, 10); //10
+      // biggerNumber(-5, 5); //5
+
+// 4.
+
+      // function compareStrings(word1, word2) {
+      //   word1 = word1.toLowerCase();
+      //   word2 = word2.toLowerCase();
+      
+      //   if (word1 == word2) {
+      //     console.log("Yes");
+      //   } else {
+      //     console.log("No");
+      //   }
+      // }
+      // compareStrings("Hello", "Hello"); //Yes
+      // compareStrings("SMX", "smx"); //Yes
+      // compareStrings("beer", "vodka"); //No
+      // compareStrings("HeLlO", "hELLo"); //Yes
+
+// 5.
+
+      // function sumChar(word1) {
+      //   var sum = 0;
+      
+      //   for (var i = 0; i < word1.length; i++) {
+      //     if (word1[i] == "a") {
+      //       sum += 1;
+      //     } else if (word1[i] == "e") {
+      //       sum += 2;
+      //     } else if (word1[i] == "i") {
+      //       sum += 3;
+      //     } else if (word1[i] == "o") {
+      //       sum += 4;
+      //     } else if (word1[i] == "u") {
+      //       sum += 5;
+      //     }
+      //   }
+      //   console.log(sum);
+      // }
+      
+      // sumChar("hello"); //6
+      // sumChar("hi"); //3
+      // sumChar("bamboo");  //9
+      // sumChar("beer"); //4
+
+// 8.
+      
+      // var library = [
+      //   {
+      //     title: "Bill Gates",
+      //     author: "The Road Ahead",
+      //     readingStatus: true,
+      //   },
+      //   {
+      //     title: "Steve Jobs",
+      //     author: "Walter Isaacson",
+      //     readingStatus: true,
+      //   },
+      //   {
+      //     title: "Mockingjay: The Final Book of The Hunger Games",
+      //     author: "Suzanne Collins",
+      //     readingStatus: false,
+      //   },
+      // ];
+      
+      // for (var i = 0; i < library.length; i++) {
+      //   let book = "'" + library[i].title + "'" + " by " + library[i].author + ".";
+      //   if (library[i].readingStatus) {
+      //     console.log("Already read " + book);
+      //   } else {
+      //     console.log("You still need to read " + book);
+      //   }
+      // }
+
+// BONUS 1.
+
+      // function fiveAndGreaterOnly(arr) {
+      //   let result = arr.filter(function (num) {
+      //     return num >= 5;
+      //   });
+      
+      //   return result;
+      // }
+      
+      // console.log("fiveAndGreaterOnly", fiveAndGreaterOnly([3, 6, 8, 2])); /// [6, 8]
+      
+      // BONUS 2.
+      
+      // const employees = [
+      //   { name: "Alice", salary: 50000 },
+      //   { name: "Bob", salary: 60000 },
+      //   { name: "Charlie", salary: 70000 },
+      // ];
+      
+      // let updatedSalaries = employees.map(function (employee) {
+      //   return {
+      //     name: employee.name,
+      //     salary: Math.trunc(employee.salary * 1.1),
+      //   };
+      // });
+      
+      // console.log("updatedSalaries", updatedSalaries); // [{ name: 'Alice', salary: 55000 }, { name: 'Bob', salary: 66000 }, { name: 'Charlie', salary: 77000}]
+
+      
+// BONUS 3.
+
+      // const people = [
+      //   { name: "John", age: 25 },
+      //   { name: "Sara", age: 17 },
+      //   { name: "Mike", age: 30 },
+      // ];
+      
+      // let adultNames = people
+      //   .filter(function (person) {
+      //     return person.age >= 18;
+      //   })
+      //   .map(function (person) {
+      //     return person.name;
+      //   });
+      
+      // console.log("adultNames", adultNames); // Output: ['John', 'Mike']
+
+      
+// BONUS 4.
+      
+      // const users = [
+      //   { name: "John", email: "john@example.com" },
+      //   { name: "Sara", email: "sara@gmail.com" },
+      //   { name: "Mike", email: "mike@hotmail.com" },
+      // ];
+      
+      // let domains = users.map(function (email) {
+      //   return email.email.split("@")["1"];
+      // });
+      
+      // console.log("domains", domains);
+
