@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO list</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TODO list</h1>
+
+    <div>
+      <label for="task">Enter a new task:</label>
+      <input type="text" name="task" id="task" />
+      <button onclick="addTask()">Add task</button>
+    </div>
+
+    <ul></ul>
+
+    <script>
+      //   1. Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
+      //   2. Create a function that will run in response to the button being clicked.
+      //   3. Inside the function body, start off by storing the current value of the input element in a variable.
+      //   4. Next, empty the input element by setting its value to an empty string — ''.
+      //   5. Create three new elements — a list item (<li>), <span>, and <button>, and store them in variables.
+      //   6.Append the span and the button as children of the list item.
+      //   7. Set the text content of the span to the input element value you saved earlier, and the text content of the button to 'Delete'.
+      //   8. Append the list item as a child of the list.
+      //   9. Attach an event handler to the delete button so that, when clicked, it will delete the entire list item (<li>...</li>).
+
+      const list = document.querySelector("ul");
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", () => {
+        const myItem = input.value;
+        input.value = "";
+
+        const listItem = document.createElement("li");
+        const listText = document.createElement("span");
+        const listBtn = document.createElement("button");
+
+        listItem.appendChild(listText);
+        listText.textContent = myItem;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = "Delete";
+        list.appendChild(listItem);
+
+        listBtn.addEventListener("click", () => {
+          list.removeChild(listItem);
+        });
+
+        input.focus();
+      });
+    </script>
+  </body>
+</html>
